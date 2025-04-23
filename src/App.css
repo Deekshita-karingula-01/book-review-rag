@@ -1,0 +1,83 @@
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f5f5; /* Soft background */
+  color: #333; /* Dark text */
+  font-family: 'Arial', sans-serif;
+}
+
+.chat-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-history {
+  padding: 20px;
+  height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-message, .bot-message {
+  padding: 10px 15px;
+  border-radius: 15px;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #e0f2f7; /* Soft blue */
+  align-self: flex-start;
+}
+
+.bot-message {
+  background-color: #f0f4c3; /* Soft yellow */
+  align-self: flex-end;
+}
+
+.message-input-area {
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Standard styles that came with the example project */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
